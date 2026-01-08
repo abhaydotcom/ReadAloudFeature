@@ -1,0 +1,2 @@
+export const SAMPLE_PARAGRAPH =
+  "The quick brown fox jumps over the lazy dog. Technology has transformed the way we communicate and learn. Reading aloud helps improve pronunciation and fluency skills.";
