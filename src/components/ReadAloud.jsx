@@ -6,7 +6,7 @@ import { useAudioRecorder } from "../hooks/useAudioRecorder";
 import { useSpeechRecognition } from "../hooks/useSpeechRecognition";
 import { calculateScore } from "../utils/scoring";
 
-const TIME_LIMIT = 10;
+const TIME_LIMIT = 20;
 
 export default function ReadAloud() {
   const [recording, setRecording] = useState(false);
@@ -37,12 +37,14 @@ export default function ReadAloud() {
 
   function handleTimerEnd() {
     setTimerEnded(true);
-    stopAll(); // stop microphone, audio, timer
+    stopAll(); 
     
   }
 
   function submit() {
     setScore(calculateScore(SAMPLE_PARAGRAPH, text));
+
+    stopTimer();
   }
 
   return (
