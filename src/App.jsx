@@ -1,4 +1,4 @@
-import ReadAloud from './components/readAloud'
+import ReadAloud from './components/ReadAloud'
 
 
 function App() {
